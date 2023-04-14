@@ -60,3 +60,22 @@
 .close:active .close-icon {
     fill: var(--magic-color);
 }
+
+
+/* form */
+
+.form {
+    margin-top: 16px;
+    padding: 0 24px;
+}
+
+.modal-text {
+    display: block;
+    margin: 0;
+    padding-top: 72px;
+    text-align: center;
+    font-weight: var(--font-weight-h);
+    line-height: var(--line-height-p);
+    letter-spacing: var(--letter-spacing-p);
+    color: var( --hero-color);
+}
