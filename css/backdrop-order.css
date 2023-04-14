@@ -89,10 +89,24 @@
 }
 
 .form-label {
+    /* position: absolute;
     font-size: 12px;
     line-height: 1.17px;
     letter-spacing: 0.01em;
-    color: var(--light-slate);
+    color: var(--light-slate); */
+    width: 54px;
+    height: 14px;
+    left: 0px;
+    top: 198px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    /* LIGHT SLATE */
+    color: #8E8F99;
 }
 
 .form-field input {
@@ -155,14 +169,12 @@ textarea::placeholder {
 
 .checkbox {
     position: relative;
-    appearance: none;
     width: 16px;
     height: 16px;
     margin-right: 8px;
     background-color: var(--magic-color);
     background-image: url("../images/vector.svg");
     background-position: center;
-    background-repeat: no-repeat;
     border: 1px solid var(--hero-color);
     border-radius: 2px;
     cursor: pointer;
@@ -174,13 +186,7 @@ textarea::placeholder {
 .checkbox:hover,
 .checkbox:focus {
     outline: 0;
-    border: 1px solid var(--navy-blue);
-}
-
-.checkbox:checked {
-    appearance: none;
-    background-color: var(--ocean);
-    border: 1px solid var(--ocean);
+    border: 1px solid var(--hero-color);
 }
 
 .check-label {
