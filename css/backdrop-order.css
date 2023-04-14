@@ -42,9 +42,7 @@
     background-color: var(--accent-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon {
@@ -152,6 +150,9 @@ textarea::placeholder {
     margin-top: 16px;
 }
 
+
+/* checkbox  */
+
 .checkbox {
     position: relative;
     appearance: none;
@@ -168,4 +169,71 @@ textarea::placeholder {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:hover,
+.checkbox:focus {
+    outline: 0;
+    border: 1px solid var(--navy-blue);
+}
+
+.checkbox:checked {
+    appearance: none;
+    background-color: var(--ocean);
+    border: 1px solid var(--ocean);
+}
+
+.check-label {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: var(--letter-spacing-h);
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--light-slate);
+}
+
+.check-label:hover .checkbox {
+    border: 1px solid var(--hover-color);
+}
+
+.privacy-policy {
+    margin-left: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: var(--letter-spacing-h);
+    color: var(--hover-color);
+}
+
+
+/* button */
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-button-text {
+    margin-top: 24px;
+    width: 169px;
+    height: 56px;
+    cursor: pointer;
+    font-weight: var(--font-weight-h);
+    line-height: var(--line-height-p);
+    letter-spacing: var(--letter-spacing-h);
+    color: var(--magic-color);
+    background-color: var(--links-color);
+    border-radius: 4px;
+    border: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button-text:hover,
+.form-button-text:focus {
+    background-color: var(--hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
