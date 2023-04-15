@@ -90,11 +90,6 @@
 }
 
 .form-label {
-    /* position: absolute;
-    font-size: 12px;
-    line-height: 1.17px;
-    letter-spacing: 0.01em;
-    color: var(--light-slate); */
     width: 54px;
     height: 14px;
     left: 0px;
@@ -104,9 +99,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    /* identical to box height */
     letter-spacing: 0.01em;
-    /* LIGHT SLATE */
     color: #8E8F99;
 }
 
@@ -183,9 +176,6 @@ textarea::placeholder {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-/*  */
 
 .checkbox:hover,
 .checkbox:focus {

@@ -14,6 +14,7 @@
     padding-right: 15px;
     padding-top: 100px;
     padding-bottom: 100px;
+    align-items: baseline;
 }
 
 .logo-bottom {
@@ -83,4 +84,78 @@
 .foot-icons:hover,
 .foot-icons:focus {
     background-color: #31d0aa;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+
+.subscribe-text {
+    margin: 0;
+    font-weight: var(--font-weight-h);
+    line-height: var(--line-height-p);
+    letter-spacing: var(--letter-spacing-p);
+    color: var(--magic-color);
+}
+
+.input-button {
+    display: flex;
+    margin-top: 16px;
+}
+
+.foot-input {
+    display: flex;
+    align-items: center;
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    color: var(--magic-color);
+    background-color: var(--hero-color);
+    border: 1px solid var(--magic-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foot-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: var(--letter-spacing-h);
+    color: var(--magic-color);
+}
+
+.foot-input:hover,
+.foot-input:focus {
+    outline: 0;
+    border: 1px solid var(--hover-color);
+    color: var(--magic-color);
+}
+
+.foot-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 165px;
+    height: 40px;
+    border: 0;
+    cursor: pointer;
+    font-weight: var(--font-weight-h);
+    line-height: var(--line-height-p);
+    letter-spacing: var(--letter-spacing-p);
+    color: var(--magic-color);
+    border-radius: 4px;
+    background-color: var(--links-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foot-button:hover,
+.foot-button:focus {
+    background-color: var(--hover-color);
 }
